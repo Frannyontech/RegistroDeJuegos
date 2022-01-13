@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :cover_image %>
-    <%= form.file_field :cover_image, direct_upload: true %>
+    <%= form.file_field :cover_image%>
   </div>
 
   <div class="field">
@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :pieces %>
-    <%= form.file_field :pieces %>
+    <%= form.file_field :pieces, multiple: true %>
   </div>
 
   <div class="actions">

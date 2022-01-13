@@ -21,7 +21,7 @@
         <td><%= game.rules %></td>
         <% if game.cover_image.attached? %>
           <td>
-            <%= link_to rails_blob_path(game.cover_image) do%>
+            <%= link_to rails_blob_path(game.cover_image, disposition:'attachment') do%>
               <%= image_tag game.cover_image.variant(resize: "50x50") %>
             <% end %>
           </td>
@@ -36,7 +36,7 @@
           </td>
         <% end %>
         <% if game.rules_in_pdf.attached? %>
-          <td><%= link_to "Download PDF", rails_blob_path(game.rules_in_pdf) %></td>
+          <td><%= link_to "Download PDF", rails_blob_path(game.rules_in_pdf, disposition:'attachment') %></td>
         <% end  %>
         
         <td><%= link_to 'Show', game %></td>

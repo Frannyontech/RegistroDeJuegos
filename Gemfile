@@ -64,6 +64,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-gem "aws-sdk-s3", "~> 1.111"
+gem "aws-sdk-s3", require: false
 
 gem "image_processing", "~> 1.12"
+
+gem "figaro"
